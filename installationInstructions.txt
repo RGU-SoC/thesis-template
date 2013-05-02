@@ -1,0 +1,46 @@
+Getting setup for LaTeX
+
+Note: The Detailed Version
+To download MikTeX go to
+
+http://miktex.org/2.8/setup
+
+at the bottom of the page Download the MikTeX 2.8 Net Installer (2.94 Meg).
+
+When you run the installer it will ask you for a Directory into which to download all the MikTeX setup Files (So create a folder on your Desktop Something like "MikTeXInstallationFiles").
+
+
+You will also need to select from which site you wish to download the files from, choose a UK based host.
+It will then download > 500 meg worth of files.
+
+Once the download is complete, you will have to run the installer again, and direct it to the "MikTeXInstallationFiles" Folder, it will then install those files into your C:\ drive.
+
+Next download and install GhostScript (V9.00 released 2010-09-17).
+http://mirror.cs.wisc.edu/pub/mirrors/ghost/GPL/gs900/gs900w32.exe
+
+Then download and install GhostView (V4.9) (http://pages.cs.wisc.edu/~ghost/gsview/get49.htm)
+http://mirror.cs.wisc.edu/pub/mirrors/ghost/ghostgum/gsv49w32.exe (32 Bit edition, 64 Bit also available)
+
+Finally download and install an Editor (WinShell)
+http://www.winshell.org/WinShell331.exe
+
+You should now have a fully functioning LaTeX system up and running.
+If you take a look at the MikTeX installation on your C drive, you will see that it consists of well over 40K in files, and occupies just a few gigs.
+
+Note: The Simple Version
+A simpler way of achieving an complete install is to download a self-extracting executable file.
+This is approx 950Megs in size, and provides you with the latest MikTeX Distribution, Ghostscript, Ghostview, and an editor called TeXnicCenter.
+Available from http://www.tug.org/protext/
+You can always install WinShell editor later on once the LaTeX system itself is up and running.
+
+Aside: PDF Conversion
+
+You may also find it useful to install a PDF printer (The lab machines should have PDF Converter), all you have to do is go to File > Print and choose the PDF printer to generate a pdf of the document you are printing.
+
+First download and install the print driver
+http://www.software995.net/bin/pdf995s.exe
+
+Then the actual converter
+http://software995.com/cgi-bin/link.pl
+
+The template provided should compile with 0 errors and 0 warnings. 

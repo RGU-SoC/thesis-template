@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{book:einsteinBrownianMovement}
+Einstein A.
+\newblock {Investigations on the Theory of Brownian Movement}.
+\newblock Dover; 1956.
+
+\bibitem{web:berkeleyBOINC}
+{Berkeley University}. {Berkeley Open Infractructure for Network Computing};
+  2010.
+\newblock Available from: \url{http://boinc.berkeley.edu/} [cited 20 Sept
+  2010].
+
+\bibitem{art:Moller2003HWRastArch}
+Akenine-M{\"o}ller T, Str{\"o}m J.
+\newblock {Graphics for the Masses: A Hardware Rasterization Architecture for
+  Mobile Phones}.
+\newblock ACM Trans Graph. 2003;22(3):801--808.
+\newblock Available from:
+  \url{http://www.cs.lth.se/home/Tomas_Akenine_Moller/pubs/masses.pdf}.
+
+\bibitem{msc:Edberg2007FluxgateMagnetometer}
+Edberg T.
+\newblock {Evaluation and Optimisation of the SMILE Fluxgate Magnetometer} [MSc
+  Thesis].
+\newblock Royal Institute of Technology, Stockholm, Sweden; 2007.
+\newblock Available from:
+  \url{http://www.ee.kth.se/php/modules/publications/reports/2007/XR-EE-SPP_2007_001.pdf}.
+
+\bibitem{phd:Grace2004MiddlewareMobile}
+Grace P.
+\newblock {Overcoming Middleware Heterogeneity in Mobile Computing
+  Applications} [PhD Thesis].
+\newblock Computing Department Lancaster University; 2004.
+\newblock Available from:
+  \url{http://www.lancs.ac.uk/postgrad/gracep/thesisfinal.pdf}.
+
+\bibitem{proc:Park2006UIMgtRmtRobots}
+Park JH, Kim KO, Jeon JW.
+\newblock {PDA based User Interface Management System for Remote Control
+  Robots}.
+\newblock In: SICE-ICASE, 2006. International Joint Conference; 2006. p.
+  417--420.
+\newblock Available from: \url{10.1109/SICE.2006.315333}.
+
+\bibitem{web:Fear2005BookTabs}
+Fear S. {Publication Quality Tables in \LaTeX}; 2005.
+\newblock Available from:
+  \url{http://www.ctan.org/pub/tex-archive/macros/latex/contrib/booktabs/booktabs.pdf}
+  [cited 20 Sept 2010].
+
+\end{thebibliography}

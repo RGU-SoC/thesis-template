@@ -1,0 +1,105 @@
+\documentclass{template}
+\usepackage{graphicx,parskip,bibunits,appendix,float}
+\usepackage[ruled] {algorithm2e}
+\usepackage{url,amsmath,amssymb,fancybox,listings,pdfpages,caption,multicol,datetime,rotating, booktabs}
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage[pagebackref=false,pdffitwindow=true]{hyperref}
+
+%NOTE: The hyperref usepackage should be the last \usepackage!!
+%NOTE: When pagebackref=true an error will appear at the end of compiling. press `q' to ignore
+%NOTE: Referencing Algorithms does not work if this usepackage is before the hyperref include.!!
+%NOTE: This is a comment, ignored when the document is compiled
+%NOTE: The following document configuration settings generally do not need to be modified
+%NOTE: More packages may need to be added to provide additional functionality
+
+\hypersetup{
+    pdftitle    = {Report Title},
+    pdfauthor   = {Author Name},
+    pdfsubject  = {Subject Area},
+    pdfkeywords = {Comma separated list of keywords},
+    colorlinks  = true, anchorcolor = blue, filecolor = blue, urlcolor = blue,
+    linkcolor   = blue,    %NOTE: change (blue) to (colIdentifier) to have links within the document in Black
+    citecolor   = blue,    %NOTE: change (blue) to (colIdentifier) to have citation links within the document in Black
+}
+
+\definecolor{colBackGrnd}{rgb}{1,1,0.8}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,.5,0}
+\definecolor{colString}{rgb}{0,0,1}
+\definecolor{colWhite}{rgb}{1,1,1}
+
+\newcommand{\MyHookSign}{\hbox{\ensuremath\hookleftarrow}}
+
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Proposition}[Theorem]{Proposition}
+\newtheorem{Lemma}[Theorem]{Lemma}
+\newtheorem{Proof}[Theorem]{Proof}
+\newtheorem{Remark}[Theorem]{Remark}
+\newtheorem{Claim}[Theorem]{Claim}
+\newtheorem{Example}[Theorem]{Example}
+\newtheorem{Definition}[Theorem]{Definition}
+
+%NOTE: Setup for including program listings
+\lstset{%
+    float=H,
+    basicstyle=\ttfamily\footnotesize,
+    identifierstyle=\color{colIdentifier},
+    keywordstyle=\color{colIdentifier}, %
+    stringstyle=\color{colIdentifier},
+    commentstyle=\color{colIdentifier}, %
+    columns=flexible,
+    tabsize=2,
+    frame=single,
+    extendedchars=true, %
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left, %
+    numberstyle=\footnotesize,
+    breaklines=true,
+    prebreak={\space\MyHookSign},
+    language=Java,
+    backgroundcolor=\color{colBackGrnd},
+    breakautoindent=true, %
+    captionpos=b%
+} %\hypersetup{colorlinks=true, citecolor=\color{colIdentifier}}
+
+\sloppy %NOTE: To ensure the Right Hand Margin is used (Especially for long URLS)
+%NOTE: END of the document configuration settings
+
+\begin{document}
+
+\DeclareGraphicsExtensions{.jpg,.png,.gif,.pdf}
+%NOTE: When inserting Figures if the extension of the graphic file is not provided LaTeX will automatically search
+% for the extensions declared above, in the order declared.
+
+\title{\huge{Report Title}}
+\author{Author Full Name}
+\degreetitle{MSc in Computing: Software Technology} % Replace with appropriate degree
+\rpttype{MSc}    % Replace MSc with BSc for Honours Degree Year projects.
+\principaladviser{Dr. XXX XXX}
+
+\include{intro/abstract}
+\listofalgorithms   %NOTE: Will generate a list of Algorithms in the Table of Contents Section
+\lstlistoflistings  %NOTE: Will generate a list of Program Listings in the Table of Contents Section
+
+%NOTE: Include the relative reference for each chapter to be included
+% dividing the thesis file structure into a number of directories aids development
+% format: directoryName/filename (the .tex extension is not required for the filename)
+
+\include{intro/introduction}
+\include{usingLatex/usingLatex}
+\include{background/background}
+\include{design/design}
+\include{impl/implementation}
+\include{eval/evaluation}
+\include{conclude/conclude}
+
+\footnotesize  %NOTE: reduced the size of the text for the bibliography
+%NOTE: set the style for the bibliography and display the references used within the document
+\bibliographystyle{vancouver}
+\bibliography{thesis}
+\normalsize
+\appendix
+\include{appendix/appendix}
+\end{document} %NOTE: END of document, nothing after this point

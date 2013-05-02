@@ -1,0 +1,33 @@
+
+To Do. 
+
+1 Read the instructions in the file thesisTemplate.pdf
+
+2 Download and install the necessary software
+
+3 Compile the files thesis.tex and thesis.bib to generate the file thesis.pdf so that it is identical to file thesisTemplate.pdf
+
+3a To achieve this compile with pdfLaTeX, then run BibTeX and compile with pdfLaTeX two further times
+
+3b It is only necessary to run BibTeX when new citations are added in the thesis document
+
+3c Two compiles of pdfLaTeX is sufficient to allow for correct references to be established
+
+3d If one is simply adding additional content (text / figures / tables) then a single compile of pdfLaTeX is sufficient for testing purposes
+
+3e Note that quite a number of additional files may now be seen in the root and subfolders of the (ThesisTemplate) directory
+
+4 With a successful compile achieved, start reading through the latex documents (.tex) to see how the various elements are assembled
+
+5 Begin editing the document starting with thesis.tex by entering elements such as Thesis Title and Author
+
+6 When it is necessary to start inserting figures / tables and so forth, copy and paste the LaTeX code provided and edit as necessary
+
+7 Note: it may be easier to develop blocks of text in an Editor such as MSWord, due to its spelling and grammar ulities
+
+Further Info
+
+The LaTeX Command Summary available from
+http://www.ntg.nl/doc/biemesderfer/ltxcrib.pdf
+
+is a useful resource to quickly lookup LaTeX Commands.
