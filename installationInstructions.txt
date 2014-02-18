@@ -1,4 +1,4 @@
-Getting setup for using LaTeX
+Getting setup for using using using LaTeX
 
 Note: The Detailed Version
 To download MikTeX go to
